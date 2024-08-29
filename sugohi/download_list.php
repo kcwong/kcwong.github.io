@@ -2,7 +2,7 @@
 if(isset($_REQUEST["file"])){
     // Get parameters
     $file = urldecode($_REQUEST["file"]); // Decode URL-encoded string
-    $filepath = "sugohi/" . $file;
+    $filepath = "list/" . $file;
     
     // Process download
     if(file_exists($filepath)) {
