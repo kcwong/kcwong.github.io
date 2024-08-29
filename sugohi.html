@@ -1,0 +1,115 @@
+<html> <head>
+<meta http-equiv="Content-Type"
+content="text/html">
+<title>SuGOHI (HSC) Internal Lens Candidate List</title>
+  <style>
+    div.padded {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }  
+  </style>
+</head>
+
+<body>
+<h2>SuGOHI (HSC) Internal Lens Candidate List</h2>
+
+<p><a href="download_list.php?file=list.csv">Download the full catalog</a></p>
+
+<hr>
+<ul>
+<li>Lens Candidates Query<br><br>
+<form action="cand.php" method="post">
+<input type="submit" value="Show list"> <input type="reset" value="Reset"><br><br>
+<br>
+Output format:
+<input type="radio" name="outfmt" value="html" CHECKED> HTML    <input type="radio" name="outfmt" value="csv"> csv
+<br>
+<br>
+Select grades:
+<p>
+<input type="checkbox" id="getgradea" name="gradea" value="ok" CHECKED>Grade A (definitely a lens)
+<br>
+<input type="checkbox" id="getgradeb" name="gradeb" value="ok" CHECKED><label for="getgradeb">Grade B (probably a lens)</label> 
+<br>
+<input type="checkbox" id="getgradec" name="gradec" value="ok" CHECKED><label for="getgradec">Grade C (possibly a lens)</label>
+</p>
+Lens type:
+<p>
+<input type="checkbox" id="galscale" name="galaxy" value="ok" CHECKED><label for="galscale">Galaxy scale</label> 
+<br>
+<input type="checkbox" id="groupscale" name="group" value="ok" CHECKED><label for="groupscale">Group/cluster scale</label> 
+<br>
+</p>
+Source type:
+<p>
+<input type="checkbox" id="gsource" name="gsource" value="ok" CHECKED><label for="gsource">Galaxy source</label> 
+<br>
+<input type="checkbox" id="qsource" name="qsource" value="ok" CHECKED><label for="qsource">Quasar source</label> 
+<br>
+</p>
+Spectroscopy:
+<p>
+<input type="checkbox" name="ylspecz" value="ok" CHECKED>W/ lens spec-z <input type="checkbox" name="nlspecz" value="ok" CHECKED>No lens spec-z
+<br>
+<input type="checkbox" name="ysspecz" value="ok" CHECKED>W/ source spec-z <input type="checkbox" name="nsspecz" value="ok" CHECKED>No source spec-z
+<br>
+</p>
+<br>
+Combine with positional constraints:
+<div class="padded"> 
+<input type="radio" name="position" value="box" CHECKED> Rectangular search:
+<p> 
+ra range: from <input type="text" name="ramin" value="0.0" size=6> to 
+<input type="text" name="ramax" value="360.0" size=6> <br>
+dec range: from <input type="text" name="decmin" value="-90.0" size=6> to 
+<input type="text" name="decmax" value="90.0" size=6> <br>
+</p>
+</div>
+<div class="padded">
+<input type="radio" name="position" value="radial" > Radial search:
+<p>
+ra: <input type="text" name="ra0" value="0.0" size=6> dec: <input type="text" name="dec0" value="0.0" size=6> radius (arcmin) <input type="text" name="radius" value="1.0" size=6>
+</div>
+</p>
+Show columns:
+<br>
+<input type="checkbox" name="showname" value="ok" CHECKED>Name 
+<input type="checkbox" name="showimg" value="ok" CHECKED>Cutout
+<input type="checkbox" name="showra" value="ok" CHECKED>RA
+<input type="checkbox" name="showdec" value="ok" CHECKED>Dec
+<input type="checkbox" name="showzl" value="ok" CHECKED>Lens spec-z
+<input type="checkbox" name="showzs" value="ok" CHECKED>Source spec-z
+<br>
+<input type="checkbox" name="showzlphot" value="ok" >Lens photo-z
+<input type="checkbox" name="showzsphot" value="ok" >Source photo-z
+<input type="checkbox" name="showrein" value="ok" >Einstein radius
+<input type="checkbox" name="showlmagi" value="ok" >Lens mag_i
+<input type="checkbox" name="showsmagi" value="ok" >Source mag_i
+<br>
+<input type="checkbox" name="showsample" value="ok" CHECKED>Parent sample
+<input type="checkbox" name="showtype" value="ok" CHECKED>Lens-source type
+<input type="checkbox" name="showdisc" value="ok" CHECKED>Discovery method
+<input type="checkbox" name="showgrade" value="ok" CHECKED>Grade
+<br>
+<input type="checkbox" name="showspecf" value="ok" >Spectroscopic follow-up
+<input type="checkbox" name="showphotf" value="ok" >Photometric follow-up
+<input type="checkbox" name="showref" value="ok" CHECKED>Reference
+<input type="checkbox" name="showcomment" value="ok" CHECKED>Comments
+</li>
+
+<br><br>
+
+Sort by:
+<input type="radio" name="sort" value="ra_asc" CHECKED> RA (ascending):
+<br>
+<input type="radio" name="sort" value="ra_des" CHECKED> RA (descending):
+<br>
+
+</form>
+</ul>
+<hr>
+
+
+</body> </html>
