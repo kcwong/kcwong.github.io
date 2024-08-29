@@ -1,6 +1,6 @@
 <?php
 
-if (!($fp=fopen("./list.csv","r"))){
+if (!($fp=fopen("list.csv","r"))){
    echo "fail to open the list file";
 }
 // $data=fgetcsv($fp);
