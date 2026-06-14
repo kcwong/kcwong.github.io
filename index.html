@@ -68,74 +68,6 @@
         margin: 36px 0 16px;
       }
 
-      /* ── Research topic cards ── */
-      .topic {
-        margin-bottom: 28px;
-      }
-      .topic-title {
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0 0 6px;
-      }
-      .topic-body {
-        color: #ccc;
-        font-size: 14px;
-        line-height: 1.7;
-        margin: 0;
-      }
-
-      /* ── Image placeholder ── */
-      .topic-image {
-        width: 100%;
-        height: 160px;
-        background: #111;
-        border: 1px solid #2a2a2a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #444;
-        font-size: 13px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-      }
-
-      /* ── Two-column layout for topics ── */
-      .topic-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        margin-bottom: 12px;
-      }
-
-      /* ── Selected papers ── */
-      .paper {
-        margin-bottom: 18px;
-        padding-left: 14px;
-        border-left: 2px solid #333;
-      }
-      .paper-title {
-        color: white;
-        font-size: 14px;
-        font-style: italic;
-        margin: 0 0 3px;
-      }
-      .paper-authors {
-        color: #888;
-        font-size: 13px;
-        margin: 0 0 2px;
-      }
-      .paper-journal {
-        color: #666;
-        font-size: 13px;
-        margin: 0;
-      }
-      .paper-journal a {
-        color: #888;
-        text-decoration: none;
-      }
-      .paper-journal a:hover { color: white; }
-
       /* ── Footer ── */
       hr.footer-rule {
         border: none;
@@ -154,7 +86,18 @@
     <div style="text-align: center; ">
       <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(0, 0, 0); text-align: left; width: 700px; " id="body_content">
         <div style="margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
-			<p align="center" class="Header">Kenneth C. Wong</p>
+	        <!-- Navigation -->
+	        <div class="nav">
+	          <a href="index.html">Home</a>
+	          <a href="research.html" class="active">Research</a>
+	          <a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=OR&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FWong%2C%20K%2FWong%2C%20Kenneth%20C%22&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FWong%2C%20K%2FWong%2C%20K%20%20C%22&filter_property_fq_property=AND&filter_property_fq_property=property%3A%22refereed%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq=%7B!type%3Daqp%20v%3D%24fq_property%7D&fq_author=(author_facet_hier%3A%221%2FWong%2C%20K%2FWong%2C%20Kenneth%20C%22%20OR%20author_facet_hier%3A%221%2FWong%2C%20K%2FWong%2C%20K%20%20C%22)&fq_database=database%3A%20astronomy&fq_property=(property%3A%22refereed%22)&q=author%3A(%22wong%2Ck%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0">Publications</a>
+	          <a href="kcw_cvshort.pdf">Curriculum Vitae</a>
+	        </div>
+			
+	        <!-- Page header -->
+	        <div class="page-header">
+	          <p align="center" class="Header">Kenneth C. Wong</p>
+	        </div>
             <p align="center">
               <img src="figs/kcw.png" alt="" style="border: none; height: 200px; width: 150px; " />
             </p>
