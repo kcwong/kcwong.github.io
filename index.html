@@ -5,6 +5,149 @@
 <html xml:lang="en" lang="en">
   <head>
     <title>Kenneth Wong</title>
+    <style type="text/css">
+      body {
+        background: rgb(0, 0, 0);
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: white;
+      }
+
+      #body_content {
+        margin: 0 auto;
+        width: 700px;
+        word-wrap: break-word;
+        background: rgb(0, 0, 0);
+        text-align: left;
+        padding-bottom: 40px;
+      }
+
+      /* ── Navigation ── */
+      .nav {
+        border-bottom: 1px solid #444;
+        padding: 14px 0 12px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .nav a {
+        color: #aaa;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 0 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .nav a:hover { color: white; }
+      .nav a.active { color: white; border-bottom: 1px solid white; padding-bottom: 2px; }
+
+      /* ── Page header ── */
+      .page-header {
+        margin: 0 0 32px;
+        text-align: center;
+      }
+      .page-header p.Header {
+        margin: 0 0 4px;
+      }
+      .page-title {
+        color: #888;
+        font-size: 14px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      /* ── Section headings ── */
+      .section-heading {
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-bottom: 1px solid #333;
+        padding-bottom: 6px;
+        margin: 36px 0 16px;
+      }
+
+      /* ── Research topic cards ── */
+      .topic {
+        margin-bottom: 28px;
+      }
+      .topic-title {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 6px;
+      }
+      .topic-body {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      /* ── Image placeholder ── */
+      .topic-image {
+        width: 100%;
+        height: 160px;
+        background: #111;
+        border: 1px solid #2a2a2a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #444;
+        font-size: 13px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      /* ── Two-column layout for topics ── */
+      .topic-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 12px;
+      }
+
+      /* ── Selected papers ── */
+      .paper {
+        margin-bottom: 18px;
+        padding-left: 14px;
+        border-left: 2px solid #333;
+      }
+      .paper-title {
+        color: white;
+        font-size: 14px;
+        font-style: italic;
+        margin: 0 0 3px;
+      }
+      .paper-authors {
+        color: #888;
+        font-size: 13px;
+        margin: 0 0 2px;
+      }
+      .paper-journal {
+        color: #666;
+        font-size: 13px;
+        margin: 0;
+      }
+      .paper-journal a {
+        color: #888;
+        text-decoration: none;
+      }
+      .paper-journal a:hover { color: white; }
+
+      /* ── Footer ── */
+      hr.footer-rule {
+        border: none;
+        border-top: 1px solid #333;
+        margin: 40px 0 16px;
+      }
+      .footer-text {
+        color: #555;
+        font-size: 12px;
+        margin: 2px 0;
+      }
+    </style>
     <link rel="stylesheet" type="text/css" media="screen,print" href="Welcome_files/Welcome.css" />
   </head>
   <body style="background: rgb(0, 0, 0); margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
