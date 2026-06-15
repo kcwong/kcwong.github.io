@@ -1,0 +1,124 @@
+  body {
+    background: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: white;
+  }
+
+  #body_content {
+    margin: 0 auto;
+    width: 700px;
+    word-wrap: break-word;
+    background: rgb(0, 0, 0);
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    border-bottom: 1px solid #444;
+    padding: 14px 0 12px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .nav a:hover { color: white; }
+  .nav a.active { color: white; border-bottom: 1px solid white; padding-bottom: 2px; }
+
+  /* ── Page header ── */
+  .page-header {
+    margin: 0 0 32px;
+    text-align: center;
+  }
+  .page-header p.Header {
+    margin: 0 0 4px;
+  }
+  .page-title {
+    color: #ccc;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  /* ── Section headings ── */
+  .section-heading {
+    color: #ccc;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+    margin: 36px 0 16px;
+  }
+
+  /* ── Research topic cards ── */
+  .topic {
+    margin-bottom: 28px;
+  }
+  .topic-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 6px;
+  }
+  .topic-body {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── Image placeholder ── */
+  .topic-image {
+    width: 100%;
+    height: 50%;
+    background: #000;
+    border: 0px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 13px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .topic-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* ── Two-column layout for topics ── */
+  .topic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 12px;
+  }
+
+  /* ── Footer ── */
+  hr.footer-rule {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 40px 0 16px;
+  }
+  .footer-text {
+    color: #888;
+    font-size: 12px;
+    margin: 2px 0;
+  }
