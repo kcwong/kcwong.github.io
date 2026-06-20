@@ -133,6 +133,7 @@
 					  <li>Daniel Johnson*</li>
 					  <li>Shawn Knabel*</li>
 					  <li>Ashish Kumar Meena</li>
+					  <li>Anupreeta More</li>
 					  <li>Pritom Mozumdar*</li>
 					  <li>Giacomo Queirolo</li>
 					  <li>William Sheu*</li>
@@ -150,6 +151,97 @@
                 <p>
                     * indicates participant is also staying for TDCOSMO collaboration meeting on August 6-7 in Room 1116
                 </p>
+				<style>
+				h2.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+				.sched{width:100%;border-collapse:collapse;font-size:14px;margin-top:1rem;table-layout:fixed}
+				.sched th,.sched td{border:0.5px solid var(--color-border-tertiary);padding:8px 12px;vertical-align:top}
+				.sched thead th{background:var(--color-background-secondary);font-weight:500;font-size:13px;color:var(--color-text-secondary);text-align:left}
+				.sched thead th.day-header{text-align:center}
+				.time-col{width:80px;color:var(--color-text-secondary);font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums;padding-top:10px}
+				.slot{padding:8px 10px;border-left:3px solid;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0}
+				.slot-speaker{font-weight:500;font-size:14px;color:var(--color-text-primary);margin:0 0 2px}
+				.slot-title{font-size:12px;color:var(--color-text-secondary);margin:0 0 4px}
+				.slot-chair{font-size:11px;color:var(--color-text-tertiary);margin:0}
+				.break-row td{background:var(--color-background-secondary)}
+				.break-label{font-size:12px;color:var(--color-text-tertiary);text-align:center}
+				.keynote .slot{border-color:#378ADD;background:#F3F8FD}
+				.workshop .slot{border-color:#639922;background:#F3F8EC}
+				.panel .slot{border-color:#7F77DD;background:#F5F4FE}
+				.networking .slot{border-color:#BA7517;background:#FDF6EC}
+				@media(prefers-color-scheme:dark){
+				.keynote .slot{border-color:#378ADD;background:#042C53}
+				.workshop .slot{border-color:#639922;background:#173404}
+				.panel .slot{border-color:#7F77DD;background:#26215C}
+				.networking .slot{border-color:#BA7517;background:#412402}
+				}
+				</style>
+
+				<h2 class="sr-only">3-day workshop schedule with speakers and chairs</h2>
+
+				<table class="sched">
+				  <thead>
+				    <tr>
+				      <th class="time-col"></th>
+				      <th class="day-header">Day 1 — Monday</th>
+				      <th class="day-header">Day 2 — Tuesday</th>
+				      <th class="day-header">Day 3 — Wednesday</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td class="time-col">9:00 AM</td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">Dr. Sarah Chen</p><p class="slot-title">Opening Keynote: The Future of Innovation</p><p class="slot-chair">Chair: Marcus Webb</p></div></td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">Marcus Webb</p><p class="slot-title">Morning Keynote: Scaling for Impact</p><p class="slot-chair">Chair: Dr. Priya Nair</p></div></td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">Dr. Priya Nair</p><p class="slot-title">Closing Keynote: Looking Ahead</p><p class="slot-chair">Chair: Dr. Sarah Chen</p></div></td>
+				    </tr>
+				    <tr class="break-row">
+				      <td class="time-col">10:00 AM</td>
+				      <td class="break-label" colspan="3">Coffee break — 20 min</td>
+				    </tr>
+				    <tr>
+				      <td class="time-col">10:20 AM</td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">James Okafor</p><p class="slot-title">Hands-On with Machine Learning Pipelines</p><p class="slot-chair">Chair: Rachel Kim</p></div></td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">Yuki Tanaka</p><p class="slot-title">Data Visualization in Practice</p><p class="slot-chair">Chair: Ivan Petrov</p></div></td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">Amara Diallo</p><p class="slot-title">Deploying Models at Scale</p><p class="slot-chair">Chair: Sofia Esposito</p></div></td>
+				    </tr>
+				    <tr>
+				      <td class="time-col">11:30 AM</td>
+				      <td class="panel"><div class="slot"><p class="slot-speaker">Webb, Okafor, Kim</p><p class="slot-title">Ethics in AI: Where Do We Draw the Line?</p><p class="slot-chair">Chair: Lena Müller</p></div></td>
+				      <td class="panel"><div class="slot"><p class="slot-speaker">Tanaka, Petrov, Nair</p><p class="slot-title">Open Source vs Proprietary: The Debate</p><p class="slot-chair">Chair: Carlos Rivera</p></div></td>
+				      <td class="panel"><div class="slot"><p class="slot-speaker">Diallo, Esposito, Chen</p><p class="slot-title">The Road to Responsible Deployment</p><p class="slot-chair">Chair: Nia Adeyemi</p></div></td>
+				    </tr>
+				    <tr class="break-row">
+				      <td class="time-col">12:30 PM</td>
+				      <td class="break-label" colspan="3">Lunch — 60 min</td>
+				    </tr>
+				    <tr>
+				      <td class="time-col">1:30 PM</td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">Rachel Kim</p><p class="slot-title">Building Robust APIs for AI Services</p><p class="slot-chair">Chair: James Okafor</p></div></td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">Ivan Petrov</p><p class="slot-title">Fine-Tuning Foundation Models</p><p class="slot-chair">Chair: Yuki Tanaka</p></div></td>
+				      <td class="workshop"><div class="slot"><p class="slot-speaker">Sofia Esposito</p><p class="slot-title">Evaluation Frameworks for LLMs</p><p class="slot-chair">Chair: Amara Diallo</p></div></td>
+				    </tr>
+				    <tr>
+				      <td class="time-col">3:00 PM</td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">Dr. Alan Brooks</p><p class="slot-title">Featured Talk: Rethinking Benchmarks</p><p class="slot-chair">Chair: Lena Müller</p></div></td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">Mei-Ling Zhou</p><p class="slot-title">Featured Talk: Human-AI Collaboration</p><p class="slot-chair">Chair: Carlos Rivera</p></div></td>
+				      <td class="keynote"><div class="slot"><p class="slot-speaker">All leads</p><p class="slot-title">Award Ceremony & Closing Remarks</p><p class="slot-chair">Chair: Dr. Sarah Chen</p></div></td>
+				    </tr>
+				    <tr class="break-row">
+				      <td class="time-col">4:00 PM</td>
+				      <td class="break-label" colspan="3">Coffee break — 15 min</td>
+				    </tr>
+				    <tr>
+				      <td class="time-col">4:15 PM</td>
+				      <td class="networking"><div class="slot"><p class="slot-speaker">All attendees</p><p class="slot-title">Structured Networking Session</p><p class="slot-chair">Chair: Nia Adeyemi</p></div></td>
+				      <td class="networking"><div class="slot"><p class="slot-speaker">Various presenters</p><p class="slot-title">Poster Session & Demo Fair</p><p class="slot-chair">Chair: Dr. Alan Brooks</p></div></td>
+				      <td class="networking"><div class="slot"><p class="slot-speaker">All attendees</p><p class="slot-title">Closing Reception & Farewell</p><p class="slot-chair">Chair: Marcus Webb</p></div></td>
+				    </tr>
+				    <tr class="break-row">
+				      <td class="time-col">5:30 PM</td>
+				      <td class="break-label" colspan="3">End of day</td>
+				    </tr>
+				  </tbody>
+				</table>
 				
             </section>
 			
